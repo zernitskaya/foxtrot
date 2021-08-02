@@ -1,0 +1,7 @@
+.product-action {
+    display: flex;
+}
+
+.product-action__item:not(:last-child) {
+    margin-right: 8px;
+}

@@ -1,0 +1,22 @@
+.action-item {
+    display: block;
+    padding: 0 6px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.action-item--first {
+    background-color: #825dc7;
+}
+
+.action-item--second {
+    background-color: $brand-color;
+}
+
+.action-item--third {
+    background-color: $mark-color;
+    color: #000;
+}

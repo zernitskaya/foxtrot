@@ -1,0 +1,131 @@
+.product-card {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 11px 6px rgba(0, 0, 0, .06);
+        }
+    }
+}
+
+.product-card__main {
+    display: flex;
+}
+
+.product-card__img-wrap {
+    width: 190px;
+}
+
+.product-card__colors,
+.product-card__credit {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.product-card__size-container {
+    position: relative;
+    display: block;
+    padding-bottom: 100%;
+}
+
+.product-card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-card__name {
+    display: block;
+    line-height: 1.28;
+    margin-bottom: 15px;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            color: $brand-color;
+        }
+    }
+}
+
+.product-card__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.product-card__rating {
+    margin-right: 16px;
+}
+
+.product-card__comments {
+    display: flex;
+    align-items: center;
+}
+
+.product-card__comments-ico {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+}
+
+.product-card__comments-number {
+    font-size: 12px;
+    border-bottom: 1px dotted;
+}
+
+.product-card__code {
+    display: flex;
+    margin-left: auto;
+    font-size: 12px;
+    color: #bebebe;
+}
+
+.product-card__old-price {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.product-card__old-sum {
+    margin-right: 8px;
+    color: #797979;
+    text-decoration: line-through;
+}
+
+.product-card__price {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 29px;
+}
+
+.product-card__credit-payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.product-card__credit-repayment {
+    display: flex;
+    align-items: center;
+}
+
+.product-card__credit-repayment-ico {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.product-card__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

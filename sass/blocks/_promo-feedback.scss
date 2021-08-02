@@ -1,0 +1,167 @@
+.promo-feedback {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 90px 72px;
+    flex-grow: 1;
+    border-radius: 20px;
+    background-color: $sub-bg;
+
+    @include media-max {
+        padding: 60px;
+    }
+
+    @include media-xl {
+        padding: 30px;
+    }
+    
+    @include media-lg {
+        display: block;
+    }
+
+    @include media-exsm {
+        padding: 24px;
+    }
+
+    @include media-sm {
+        padding: 16px;
+    }
+}
+
+.promo-feedback__info {
+    @include media-lg {
+        margin-bottom: 16px;
+    }
+}
+
+.promo-feedback__img {
+    max-width: 100%;
+}
+
+.promo-feedback__text {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include media-max {
+        font-size: 36px;
+    }
+
+    @include media-sm {
+        font-size: 24px;
+    }
+}
+
+.promo-feedback__top {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 24px;
+
+    @include media-sm {
+        margin-bottom: 16px;
+    }
+}
+
+.promo-feedback__ico {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+
+    @include media-max {
+        width: 74px;
+        height: 74px;
+    }
+
+    @include media-sm {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.promo-feedback__list {
+    display: flex;
+    align-items: center;
+}
+
+.promo-feedback__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.promo-feedback__link {
+    display: block;
+
+    &:active {
+        opacity: .7;
+    }
+}
+
+.promo-feedback__motiv {
+    margin-left: auto;
+    padding-left: 16px;
+}
+
+.promo-feedback__motiv-wrap {
+    display: flex;
+}
+
+.promo-feedback__motiv-ico {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+
+    @include media-max {
+        width: 74px;
+        height: 74px;
+    }
+
+    @include media-sm {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.promo-feedback__motiv-text {
+    font-weight: 700;
+    font-size: 40px;
+
+    @include media-sm {
+        font-size: 24px;
+    }
+}
+
+.promo-feedback__number {
+    font-size: 80px;
+    font-weight: 700;
+
+    @include media-max {
+        font-size: 64px;
+    }
+
+    @include media-sm {
+        font-size: 24px;
+    }
+}
+
+.promo-feedback__next-text {
+    font-size: 26px;
+    font-weight: 700;
+
+    @include media-max {
+        font-size: 22px;
+    }
+}
+
+.promo-feedback__text-wrap {
+    margin-right: 16px;
+}
+
+.promo-feedback__subtext {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: $sub-color;
+
+    @include media-lg {
+        position: static;
+    }
+}

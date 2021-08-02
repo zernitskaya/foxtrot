@@ -1,0 +1,13 @@
+.btn-link {
+    font-size: 14px;
+    color: #848484;
+    border-bottom: 1px dotted;
+
+    &:active {
+        opacity: .7;
+    }
+}
+
+.btn-link--active {
+    color: $brand-color;
+}

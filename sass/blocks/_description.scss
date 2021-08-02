@@ -1,0 +1,43 @@
+.description {
+    border-radius: 20px;
+    background-color: $sub-bg;
+    padding: 75px;
+
+    h1, h2 {
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 38px;
+
+        @include media-xl {
+            margin-bottom: 24px;
+            font-size: 32px;
+        }
+
+        @include media-sm {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        color: $sub-color;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    @include media-max {
+        padding: 60px;
+    }
+
+    @include media-xl {
+        padding: 30px;
+    }
+
+    @include media-exsm {
+        padding: 24px;
+    }
+
+    @include media-sm {
+        padding: 16px;
+    }
+}

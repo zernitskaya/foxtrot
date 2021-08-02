@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.pagination__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.pagination__item--active {
+    .pagination__link {
+        color: #fff;
+        background-color: #825dc7;
+    }
+}
+
+.pagination__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: #825dc7;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    @include hover {
+        &:hover,
+        &:focus {
+            background-color: rgba(130, 93, 199, .1);
+        }
+    }
+}

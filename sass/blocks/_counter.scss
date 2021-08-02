@@ -1,0 +1,21 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.counter__separator,
+.counter__number {
+    font-size: 34px;
+    font-weight: 700;
+    color: $brand-color;
+}
+
+.counter__text {
+    font-size: 12px;
+    color: $sub-color;
+}
+
+.counter__separator {
+    margin: 0 20px;
+}

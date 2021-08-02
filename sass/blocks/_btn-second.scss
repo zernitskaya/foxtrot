@@ -1,0 +1,25 @@
+.btn-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #000;
+    height: 45px;
+    width: 300px;
+
+    @include hover {
+        &:hover,
+        &:focus {
+            background-color: rgba(0, 0, 0, .9);
+        }
+    }
+
+    &:active {
+        opacity: .7;
+    }
+}

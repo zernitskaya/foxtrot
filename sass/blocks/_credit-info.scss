@@ -1,0 +1,15 @@
+.credit-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.credit-info__item {
+    width: 18px;
+    height: 18px;
+}
+
+.credit-info__item:not(:last-child) {
+    margin-bottom: 16px;
+}

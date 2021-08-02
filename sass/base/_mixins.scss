@@ -1,0 +1,50 @@
+@mixin hover() {
+    @media (hover) {
+        @content;
+    }
+}
+
+@mixin media-max {
+    @media (max-width: 1412px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media (max-width: 922px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-exsm {
+    @media (max-width: 660px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin landscape() {
+    @media screen and (min-width: 480px)
+    and (orientation: landscape)
+    and (max-height: 420px)
+    and (max-width: 900px) {
+        @content;
+    }
+}

@@ -1,0 +1,27 @@
+.promo-sect {
+    display: flex;
+
+    @include media-md {
+        display: block;
+    }
+}
+
+.promo-sect__feedback {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+
+    @include media-md {
+        margin-right: 0;
+    }
+}
+
+.promo-sect__count {
+    display: flex;
+    width: 344px;
+
+    @include media-md {
+        padding-top: 16px;
+        width: 100%;
+    }
+}

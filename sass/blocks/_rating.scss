@@ -1,0 +1,23 @@
+.rating {
+    display: flex;
+}
+
+.rating__item.active {
+    .rating__ico--plus {
+        display: block;
+    }
+
+    .rating__ico--minus {
+        display: none;
+    }
+}
+
+.rating__ico {
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+
+.rating__ico--plus {
+    display: none;
+}

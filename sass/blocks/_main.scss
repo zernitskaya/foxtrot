@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    
+    @include media-lg {
+        display: block;
+    }
+}
+
+.main__filter {
+    flex-shrink: 0;
+    width: 278px;
+    padding-top: 64px;
+
+    @include media-lg {
+        display: none;
+    }
+}
+
+.main__content {
+    flex-grow: 1;
+}

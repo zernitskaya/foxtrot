@@ -1,0 +1,64 @@
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:active .toggle-btn__wrap {
+        opacity: .7;
+    }
+}
+
+.toggle-btn__wrap {
+    position: relative;
+    border-radius: 15px;
+    height: 20px;
+    width: 40px;
+    margin: 0 16px;
+    background-color: #f2f2f2;
+}
+
+.toggle-btn__btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: $brand-color;
+
+    &:before {
+        content: '';
+        width: 35%;
+        height: 35%;
+        background-color: #fff;
+        border-radius: inherit;
+    }
+}
+
+.toggle-btn__text-left {
+    color: $brand-color;
+}
+
+.toggle-btn__input:checked {
+    & ~ .toggle-btn__wrap .toggle-btn__btn {
+        left: auto;
+        right: 0;
+    }
+
+    & ~ .toggle-btn__text-left {
+        color: #848484;
+    }
+
+    & ~ .toggle-btn__text-right {
+        color: $brand-color;
+    }
+}
+
+.info-product__sort-item:not(:last-child) {
+    margin-right: 8px;
+}

@@ -1,0 +1,89 @@
+.count-sect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: $sub-bg;
+    flex-grow: 1;
+    padding: 40px;
+
+    @include media-max {
+        padding: 24px;
+    }
+}
+
+.count-sect__time-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.count-sect__date-text {
+    margin-right: 4px;
+    font-size: 12px;
+    color: $sub-color;
+}
+
+.count-sect__warning {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+
+    @include media-md {
+        margin-bottom: 24px;
+    }
+}
+
+.count-sect__warning-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+.count-sect__warning-ico {
+    width: 16px;
+    height: 16px;
+}
+
+.count-sect__bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.count-sect__bot-text {
+    font-size: 14px;
+    color: $sub-color;
+}
+
+.count-sect__soc-list {
+    display: flex;
+}
+
+.count-sect__soc-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.count-sect__soc-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &:active {
+        opacity: .7;
+    }
+}
+
+.count-sect__separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 74px;
+
+    @include media-md {
+        bottom: 39px;
+    }
+}
